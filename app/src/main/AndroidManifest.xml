@@ -16,10 +16,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LAB_WEEK_8">
         <service
+            android:name=".SecondNotificationService"
+            android:enabled="true"
+            android:exported="true"></service>
+        <service
             android:name=".NotificationService"
             android:enabled="true"
             android:exported="true"
-            android:foregroundServiceType="dataSync"></service>
+            android:foregroundServiceType="dataSync" />
 
         <activity
             android:name=".MainActivity"
